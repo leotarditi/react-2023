@@ -2,7 +2,7 @@
  Estoy aprendiendo React 2023 con el canal de youtube midulive
  https://www.youtube.com/@midulive
 
-# Introduccion
+# [Introduccion](https://www.youtube.com/watch?v=7iobxzd_2wY)
 
 ## Definicion de React
 
@@ -61,3 +61,20 @@ Se pueden poner expresiones: <p> Hola {name} </p>
 - Usaremos [Vite](https://vitejs.dev/)
 - Un componente es un funcion que devuelve un elemento
 - Los componentes tienen que ser PascalCase para que no se confunda con futuros HTML
+- La base de la reutilizacion son las PROPS (deberian ser inmutables)
+- La expresion solo se evalua cuando estan entre {}
+- Tratar de no utilizar mb (usar el estilo de separacion en un contenedor)
+- El children es todo lo que se envuelve con el componente (nunca usar como props)
+- {... midudev} pasa sus campos como prop (es medio mala practica)
+
+### Componente vs Elemento
+
+- Componentes: Una factoria de elementos (funcion que devuelve elementos)
+- Elemento: Es lo que renderiza React
+
+### Estado
+
+- React hace una foto de lo renderizado y compara con los cambios de estado (solo hace los minimos)
+- Cuando hay un cambio de estado se renderizan sus hijos si o si (por eso conviene hacer los cambios de estado donde se debe)
+- Si la prop se usa para inicializar el estado usamos -> initialIsFollowing (no se reinicializa cada vez que cambio el estado)
+- Siempre que renderizamos una lista de elementos debemos renderizar la key (identificador unico para ese elemento). Utilizar algo que es unico del elemento
