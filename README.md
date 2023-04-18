@@ -1,6 +1,4 @@
-# react-2023
- Estoy aprendiendo React 2023 con el canal de youtube midulive
- https://www.youtube.com/@midulive
+Estoy aprendiendo React 2023 con el canal de youtube [midulive](https://www.youtube.com/@midulive)
 
 # [Introduccion](https://www.youtube.com/watch?v=7iobxzd_2wY)
 
