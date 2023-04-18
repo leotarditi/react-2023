@@ -1,0 +1,20 @@
+{
+  "name": "react-2023",
+  "version": "1.0.0",
+  "description": "Estoy aprendiendo React 2023 con el canal de youtube midulive  https://www.youtube.com/@midulive",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leotarditi/react-2023.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/leotarditi/react-2023/issues"
+  },
+  "homepage": "https://github.com/leotarditi/react-2023#readme"
+}
