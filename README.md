@@ -76,3 +76,26 @@ Se pueden poner expresiones: <p> Hola {name} </p>
 - Cuando hay un cambio de estado se renderizan sus hijos si o si (por eso conviene hacer los cambios de estado donde se debe)
 - Si la prop se usa para inicializar el estado usamos -> initialIsFollowing (no se reinicializa cada vez que cambio el estado)
 - Siempre que renderizamos una lista de elementos debemos renderizar la key (identificador unico para ese elemento). Utilizar algo que es unico del elemento
+
+# [Crea un ta-te-ti y aprende useState](https://www.youtube.com/watch?v=qkzcjwnueLA)
+
+## Observaciones
+
+- Esto esta MAL porque no se deben modificar la props (problemas de renderizado)
+    board[index] = turn
+    setBoard(board)
+- Esto esta BIEN porque te estas quedando con todos los campos y estas cambiando una variable, en el set del useState pasar algo nuevo.
+    const newBoard = [...board]
+    newBoard[index] = turn
+    setBoard(newBoard)
+
+- La actualizacion de los estados en React son asincronas (no bloquea el codigo que viene despues), no se puede contar con el nuevo valor despues del set en UseState
+    alert()                 IDEM    setWinner(newWinner)
+    setWinner(newWinner)            alert()
+
+- En localStorage lo que puedes guardar es un string (otra cosa no)
+- useState nunca pueden estar dentro de un if porque React guarda la posicion en cada useState
+
+# [Crea una aplicacion y aprende useEffect](https://www.youtube.com/watch?v=qkzcjwnueLA&t=4040s)
+
+## Observaciones
