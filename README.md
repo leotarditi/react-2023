@@ -107,6 +107,10 @@ Se pueden poner expresiones: <p> Hola {name} </p>
 - Buena practica crear el useState con el estado inicial con los campos que va a llevar esa variable en null | 0 dependiendo el caso en lugar de inicializar en null.
 - ¿Por qué se ejecuta dos veces el efecto? -> <React.StrictMode> ejecuta el efecto, ejectura el cleanup y ejecuta el efecto. Lo hace para comprobar que esta funcionado todo bien. Solo se hace en desarrolla. En produccion solo se hace una vez(se ignora <React.StrictMode>).
 
+-   // [] -> solo se ejecuta una vez cuando se monta el componente
+    // [enabled] -> se ejecuta cuando cambia enabled y cuando se monta el componente
+    // undefined -> se ejecuta cada vez que se renderiza el componente
+
 ### [Standar js](https://standardjs.com/)
 
 - Tiene reglas preestablecidas para el eslintrc 
@@ -114,3 +118,8 @@ Se pueden poner expresiones: <p> Hola {name} </p>
 ### React Developer Tools
 
 - Sirve para ver si esta funcionando bien los estados del los useState. Hacen lo que deberian hacer si modificando o no.
+
+### [Netlify Drop](https://app.netlify.com/drop)
+
+- Hacemos npm run build
+- Arrastramos la carpeta dist
