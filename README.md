@@ -98,4 +98,19 @@ Se pueden poner expresiones: <p> Hola {name} </p>
 
 # [Crea una aplicacion y aprende useEffect](https://www.youtube.com/watch?v=qkzcjwnueLA&t=4040s)
 
-## Observaciones
+## UseEffect
+
+- Se ejectura cuando se monta nuestra componente (al menos una vez)
+- Si no se le pasa nada en el segundo parametro se ejecuta cada vez que se renderice nuestro componentes
+- Si quiere ejecutarlo solo cuando se monta -> le pasamos en el 2do parametro Array<> vacio
+- Dentro se le pasa cuando quieres que se vuelva a ejecutar -> [var1, var2] se ejecuta cuando cambian alguna de esas dos
+- Buena practica crear el useState con el estado inicial con los campos que va a llevar esa variable en null | 0 dependiendo el caso en lugar de inicializar en null.
+- ¿Por qué se ejecuta dos veces el efecto? -> <React.StrictMode> ejecuta el efecto, ejectura el cleanup y ejecuta el efecto. Lo hace para comprobar que esta funcionado todo bien. Solo se hace en desarrolla. En produccion solo se hace una vez(se ignora <React.StrictMode>).
+
+### [Standar js](https://standardjs.com/)
+
+- Tiene reglas preestablecidas para el eslintrc 
+
+### React Developer Tools
+
+- Sirve para ver si esta funcionando bien los estados del los useState. Hacen lo que deberian hacer si modificando o no.
